@@ -3,12 +3,15 @@ package pages.user;
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
+import models.SocialTitle;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.base.BasePage;
+import pages.commons.TopMenuPage;
 
+import java.util.List;
 import java.util.Locale;
 
 public class RegistrationPage extends BasePage {
@@ -16,7 +19,7 @@ public class RegistrationPage extends BasePage {
         super(driver);
     }
     @FindBy(xpath = "//input[@name='id_gender']")
-    private WebElement socialInput;
+    private List<WebElement> socialInput;
     @FindBy(xpath = "//form[@id='customer-form']//input[@name='firstname']")
     private WebElement firstNameInput;
     @FindBy(xpath = "//form[@id='customer-form']//input[@name='lastname']")
@@ -32,8 +35,21 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//button[@data-link-action='save-customer']")
     private WebElement saveButton;
 
-    public RegistrationPage selectSocial() {
-        click(socialInput);
+   /* public RegistrationPage selectSocial() {
+        System.out.println("Clicikng: social title");
+        socialInput.click();
+        return this;
+    }*/
+
+    public RegistrationPage selectSocial(SocialTitle socialTitle){
+        switch (socialTitle){
+            case Mr:
+                socialInput.get(0).click();
+                break;
+            case Mrs:
+                socialInput.get(1).click();
+                break;
+        }
         return this;
     }
     public RegistrationPage setRandomFirstName(String firstName) {
@@ -57,9 +73,9 @@ public class RegistrationPage extends BasePage {
         click(psgdprInput);
         return this;
     }
-    public RegistrationPage acceptRegistration() {
+    public TopMenuPage acceptRegistration() {
         click(saveButton);
-        return this;
+        return new TopMenuPage(driver);
     }
 
 }

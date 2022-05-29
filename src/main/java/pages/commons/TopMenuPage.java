@@ -16,9 +16,15 @@ public class TopMenuPage extends BasePage {
     @FindBy(xpath = "//div[@id='_desktop_user_info']")
     private WebElement signInButton;
 
+    @FindBy(xpath = "//div[@id='_desktop_user_info']//a[@class='account']/span")
+    private WebElement userName;
+
     public LoginPage clickToSignIn() {
         click(signInButton);
         return new LoginPage(driver);
+    }
+    public String getLoggedInUserName(){
+        return userName.getText();
     }
 
 }
