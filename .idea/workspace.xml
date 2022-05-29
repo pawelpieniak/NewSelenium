@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12b1018-932d-486a-92d9-c5b10c688daa" name="Changes" comment="+ BasePage">
+    <list default="true" id="e12b1018-932d-486a-92d9-c5b10c688daa" name="Changes" comment="+ Wrapery (obudowanie metod do raportów)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/commons/TopMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/user/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,30 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAdvanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.RegistrationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RegistrationTests" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653827798454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="+ Wrapery (obudowanie metod do raportów)">
+      <created>1653828263794</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653828263794</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />
     <MESSAGE value="+ BasePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ BasePage" />
+    <MESSAGE value="+ Wrapery (obudowanie metod do raportów)" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Wrapery (obudowanie metod do raportów)" />
   </component>
 </project>
