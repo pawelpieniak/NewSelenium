@@ -19,12 +19,25 @@ public class TopMenuPage extends BasePage {
     @FindBy(xpath = "//div[@id='_desktop_user_info']//a[@class='account']/span")
     private WebElement userName;
 
+    @FindBy(xpath = "//div[@id='search_widget']//input[@type='text']")
+    private WebElement searchInput;
+
+    @FindBy(xpath = "//div[@id='search_widget']//button")
+    private WebElement searchButton;
+
+
     public LoginPage clickToSignIn() {
         click(signInButton);
         return new LoginPage(driver);
     }
     public String getLoggedInUserName(){
         return userName.getText();
+    }
+
+    public ListOfProductsPage searchProduct(String nameOfProduct){
+        searchInput.sendKeys(nameOfProduct);
+        searchButton.click();
+        return new ListOfProductsPage(driver);
     }
 
 }
