@@ -22,7 +22,7 @@ public class TestBase {
         driver.get("http://146.59.32.4/");
     }
 
-    @AfterMethod
+   // @AfterMethod
     public void cleanUp() {
         driver.quit();
     }

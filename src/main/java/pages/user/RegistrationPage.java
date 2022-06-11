@@ -78,6 +78,7 @@ public class RegistrationPage extends BasePage {
         return new TopMenuPage(driver);
     }
 
+
 }
 
 

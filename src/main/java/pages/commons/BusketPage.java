@@ -22,8 +22,13 @@ public class BusketPage extends BasePage {
     private WebElement deleteButton;
     @FindBy(xpath = "//span[@class='no-items']")
     private WebElement noItemsText;
+    @FindBy(css = ".cart-detailed-actions .btn-primary")
+    private WebElement proceedToCheckoutBtn;
 
 
+    public void proceedToCheckout(){
+        click(proceedToCheckoutBtn);
+    }
     public String getNameOfProduct(){
         return nameOfProduct.getText();
     }

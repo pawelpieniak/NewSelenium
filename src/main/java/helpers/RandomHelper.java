@@ -24,6 +24,10 @@ public class RandomHelper {
         int randomListIndex = rnd.nextInt(elements.size());
         return elements.get(randomListIndex);
     }
-
+    public int getRandomNumber(int max) {
+        Random rnd = new Random();
+        int randomNumber = rnd.nextInt(max);
+        return randomNumber + 1;
+    }
 
 }

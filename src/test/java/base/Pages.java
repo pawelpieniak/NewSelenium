@@ -4,9 +4,9 @@ import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 import org.testng.annotations.BeforeMethod;
+import pages.checkout.*;
 import pages.commons.*;
-import pages.user.LoginPage;
-import pages.user.RegistrationPage;
+import pages.user.*;
 
 import java.util.Locale;
 
@@ -20,9 +20,25 @@ public class Pages extends TestBase {
     public ProductDetailsPage productDetailsPage;
     public AddProductPopupPage addProductPopupPage;
     public BusketPage busketPage;
+    public AddressCheckoutPage addressCheckoutPage;
+    public CheckoutConfirmationPage checkoutConfirmationPage;
+    public PaymentsCheckoutPage paymentsCheckoutPage;
+    public PersonalInfoCheckoutPage personalInfoCheckoutPage;
+    public ShippingCheckoutPage shippingCheckoutPage;
+    public HistoryOfOrdersPage historyOfOrdersPage;
+    public MyAccountPage myAccountPage;
+    public OrderDetailsPage orderDetailsPage;
 
     @BeforeMethod
     public void pagesSetup() {
+        addressCheckoutPage = new AddressCheckoutPage(driver);
+        checkoutConfirmationPage = new CheckoutConfirmationPage(driver);
+        paymentsCheckoutPage = new PaymentsCheckoutPage(driver);
+        personalInfoCheckoutPage = new PersonalInfoCheckoutPage(driver);
+        shippingCheckoutPage = new ShippingCheckoutPage(driver);
+        historyOfOrdersPage = new HistoryOfOrdersPage(driver);
+        myAccountPage = new MyAccountPage(driver);
+        orderDetailsPage = new OrderDetailsPage(driver);
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
         topMenuPage = new TopMenuPage(driver);

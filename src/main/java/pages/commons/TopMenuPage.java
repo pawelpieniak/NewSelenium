@@ -24,7 +24,8 @@ public class TopMenuPage extends BasePage {
 
     @FindBy(xpath = "//div[@id='search_widget']//button")
     private WebElement searchButton;
-
+    @FindBy(xpath = "//div[@class='user-info']//span")
+    private WebElement myAccountButton;
 
     public LoginPage clickToSignIn() {
         click(signInButton);
@@ -40,4 +41,8 @@ public class TopMenuPage extends BasePage {
         return new ListOfProductsPage(driver);
     }
 
+    public TopMenuPage goToYourAccount() {
+        click(myAccountButton);
+        return this;
+    }
 }
