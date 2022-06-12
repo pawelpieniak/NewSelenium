@@ -15,10 +15,29 @@ public class ListOfProductsPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='product-description']//a")
     private List<WebElement> products;
+    @FindBy(xpath = "//div[@id='js-product-list-top']//p")
+    private WebElement descriptionListText;
+    @FindBy(xpath = "//div[@id='js-product-list-header']//h1")
+    private WebElement nameOfCategory;
+
+    public int numberOfExpectedProducts(){
+        String numberOfProducts = descriptionListText.getText()
+                .replace("There are ", "")
+                .replace("There is ", "")
+                .replace(" products.", "")
+                .replace(" product.", "");
+        return Integer.parseInt(numberOfProducts);
+    }
+
+    public int numberOfProducts(){
+        return products.size();
+    }
+    public String getCategoryName(){
+        return nameOfCategory.getText();
+    }
 
     public String getRandomProductName(){
-        String name = getRandomElement(products).getText();
-        return name;
+        return getRandomElement(products).getText();
     }
 
     public String getProductName(int index){

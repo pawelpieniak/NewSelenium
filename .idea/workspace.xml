@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12b1018-932d-486a-92d9-c5b10c688daa" name="Changes" comment="add Homework Ex2 and Ex3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/AddressCheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/CheckoutConfirmationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/PaymentsCheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/PersonalInfoCheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/checkout/ShippingCheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/HistoryOfOrdersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/MyAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/user/OrderDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/products/CheckoutTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/products/SearchTests.java" afterDir="false" />
+    <list default="true" id="e12b1018-932d-486a-92d9-c5b10c688daa" name="Changes" comment="add Day 5">
+      <change afterPath="$PROJECT_DIR$/src/test/java/products/CategoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/RandomHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/RandomHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/commons/BusketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/commons/BusketPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/commons/ListOfProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/commons/ListOfProductsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/commons/TopMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/commons/TopMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/user/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/user/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Pages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,60 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CheckoutTests">
+  <component name="RunManager" selected="TestNG.CategoryTest">
+    <configuration name="CategoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAdvanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products" />
+      <option name="MAIN_CLASS_NAME" value="products.CategoryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest.shouldVerifyCategories" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAdvanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products" />
+      <option name="MAIN_CLASS_NAME" value="products.CategoryTest" />
+      <option name="METHOD_NAME" value="shouldVerifyCategories" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest.shouldVerifyClothesSubcategories" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumAdvanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products" />
+      <option name="MAIN_CLASS_NAME" value="products.CategoryTest" />
+      <option name="METHOD_NAME" value="shouldVerifyClothesSubcategories" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckoutTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAdvanced" />
       <extension name="coverage">
@@ -91,65 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ex2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAdvanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homework" />
-      <option name="MAIN_CLASS_NAME" value="homework.Ex2" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ex3" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAdvanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homework" />
-      <option name="MAIN_CLASS_NAME" value="homework.Ex3" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ex3.shouldDeleteProduct" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumAdvanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="homework" />
-      <option name="MAIN_CLASS_NAME" value="homework.Ex3" />
-      <option name="METHOD_NAME" value="shouldDeleteProduct" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CheckoutTests" />
+        <item itemvalue="TestNG.CategoryTest" />
+        <item itemvalue="TestNG.CategoryTest.shouldVerifyCategories" />
+        <item itemvalue="TestNG.CategoryTest.shouldVerifyClothesSubcategories" />
         <item itemvalue="TestNG.CheckoutTests.shouldBuyProduct" />
-        <item itemvalue="TestNG.Ex2" />
-        <item itemvalue="TestNG.Ex3" />
-        <item itemvalue="TestNG.Ex3.shouldDeleteProduct" />
+        <item itemvalue="TestNG.CheckoutTests" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654813001187</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Day 5">
+      <created>1654959916584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654959916585</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +222,7 @@
     <MESSAGE value="+ add RegistrationTest" />
     <MESSAGE value="end of day 29.05" />
     <MESSAGE value="add Homework Ex2 and Ex3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Homework Ex2 and Ex3" />
+    <MESSAGE value="add Day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Day 5" />
   </component>
 </project>

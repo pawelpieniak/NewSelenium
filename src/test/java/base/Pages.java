@@ -3,6 +3,7 @@ package base;
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
 import pages.checkout.*;
 import pages.commons.*;
@@ -28,9 +29,11 @@ public class Pages extends TestBase {
     public HistoryOfOrdersPage historyOfOrdersPage;
     public MyAccountPage myAccountPage;
     public OrderDetailsPage orderDetailsPage;
+    public Actions actions;
 
     @BeforeMethod
     public void pagesSetup() {
+        actions = new Actions(driver);
         addressCheckoutPage = new AddressCheckoutPage(driver);
         checkoutConfirmationPage = new CheckoutConfirmationPage(driver);
         paymentsCheckoutPage = new PaymentsCheckoutPage(driver);
